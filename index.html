@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Crecer Felices - Voluntariado en Mendoza</title>
-    <meta name="description" content="Asociación Civil sin fines de lucro que busca fomentar valores en niños y niñas a través del juego y la contención.">
+    <meta name="description"
+        content="Asociación Civil sin fines de lucro que busca fomentar valores en niños y niñas a través del juego y la contención.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&family=Quicksand:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
     <script>
         tailwind.config = {
             theme: {
@@ -37,10 +41,11 @@
         .btn-flat {
             transition: all 0.2s ease-in-out;
         }
+
         .btn-flat:active {
             transform: scale(0.98);
         }
-        
+
         /* Patrón de puntos sutil para fondos */
         .bg-pattern {
             background-image: radial-gradient(#D7195C 1px, transparent 1px);
@@ -49,6 +54,7 @@
         }
     </style>
 </head>
+
 <body class="font-sans text-brand-dark bg-white antialiased">
 
     <!-- Navbar -->
@@ -57,26 +63,30 @@
             <div class="flex justify-between items-center h-28"> <!-- Aumenté altura de navbar -->
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
-                    
-                    <img src="Recurso 1.png" 
-                        alt="Logo Crecer Felices" 
-                        class="h-16 md:h-24 w-auto object-contain transition-transform hover:scale-105"> 
-                    
+
+                    <img src="Recurso 1.png" alt="Logo Crecer Felices"
+                        class="h-16 md:h-24 w-auto object-contain transition-transform hover:scale-105">
+
                 </div>
-                
+
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#nosotros" class="text-brand-dark hover:text-brand-fuchsia font-bold transition text-lg">Nosotros</a>
-                    <a href="#actividades" class="text-brand-dark hover:text-brand-fuchsia font-bold transition text-lg">Qué Hacemos</a>
-                    <a href="#sumate" class="text-brand-dark hover:text-brand-fuchsia font-bold transition text-lg">Sumate</a>
-                    <a href="#donar" class="px-6 py-2.5 bg-brand-fuchsia text-white font-bold rounded-full hover:bg-pink-700 transition btn-flat flex items-center gap-2 shadow-md">
+                    <a href="#nosotros"
+                        class="text-brand-dark hover:text-brand-fuchsia font-bold transition text-lg">Nosotros</a>
+                    <a href="#actividades"
+                        class="text-brand-dark hover:text-brand-fuchsia font-bold transition text-lg">Qué Hacemos</a>
+                    <a href="#sumate"
+                        class="text-brand-dark hover:text-brand-fuchsia font-bold transition text-lg">Sumate</a>
+                    <a href="#donar"
+                        class="px-6 py-2.5 bg-brand-fuchsia text-white font-bold rounded-full hover:bg-pink-700 transition btn-flat flex items-center gap-2 shadow-md">
                         <i class="fa-solid fa-heart"></i> Donar
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-brand-dark hover:text-brand-fuchsia focus:outline-none p-2">
+                    <button id="mobile-menu-btn"
+                        class="text-brand-dark hover:text-brand-fuchsia focus:outline-none p-2">
                         <i class="fa-solid fa-bars text-4xl"></i>
                     </button>
                 </div>
@@ -86,10 +96,16 @@
         <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
             <div class="px-4 pt-2 pb-6 space-y-2">
-                <a href="#nosotros" class="block px-4 py-3 text-base font-bold text-gray-700 hover:text-brand-fuchsia hover:bg-gray-50 rounded-lg transition">Nosotros</a>
-                <a href="#actividades" class="block px-4 py-3 text-base font-bold text-gray-700 hover:text-brand-fuchsia hover:bg-gray-50 rounded-lg transition">Qué Hacemos</a>
-                <a href="#sumate" class="block px-4 py-3 text-base font-bold text-gray-700 hover:text-brand-fuchsia hover:bg-gray-50 rounded-lg transition">Quiero ser Voluntario</a>
-                <a href="#donar" class="block px-4 py-3 text-base font-bold text-brand-fuchsia bg-brand-fuchsia/5 rounded-lg mt-4">
+                <a href="#nosotros"
+                    class="block px-4 py-3 text-base font-bold text-gray-700 hover:text-brand-fuchsia hover:bg-gray-50 rounded-lg transition">Nosotros</a>
+                <a href="#actividades"
+                    class="block px-4 py-3 text-base font-bold text-gray-700 hover:text-brand-fuchsia hover:bg-gray-50 rounded-lg transition">Qué
+                    Hacemos</a>
+                <a href="#sumate"
+                    class="block px-4 py-3 text-base font-bold text-gray-700 hover:text-brand-fuchsia hover:bg-gray-50 rounded-lg transition">Quiero
+                    ser Voluntario</a>
+                <a href="#donar"
+                    class="block px-4 py-3 text-base font-bold text-brand-fuchsia bg-brand-fuchsia/5 rounded-lg mt-4">
                     <i class="fa-solid fa-heart mr-2"></i>Hacer una Donación
                 </a>
             </div>
@@ -100,67 +116,78 @@
     <section class="relative pt-40 pb-20 lg:pt-52 lg:pb-32 overflow-hidden bg-brand-light">
         <!-- 1. Imagen de Fondo -->
         <div class="absolute inset-0 z-0">
-            
+
             <!-- ================================================================== -->
             <!-- FONDO MÁS VISIBLE                                                  -->
             <!-- Cambié opacity-20 a opacity-50 para que se vea mucho más.          -->
             <!-- ================================================================== -->
-            <img src="Fondo.png" 
-                alt="Niños jugando felices" 
-                class="w-full h-full object-cover opacity-50">
-            
+            <img src="Fondo.png" alt="Niños jugando felices" class="w-full h-full object-cover opacity-50">
+
             <!-- Gradiente suavizado: from-white/85 via-white/40 (antes era /90 y /70) -->
             <div class="absolute inset-0 bg-gradient-to-b from-white/85 via-white/40 to-brand-light"></div>
         </div>
 
         <!-- 2. Manchas de color (Blob Amarillo más grande) -->
-        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-[30rem] h-[30rem] bg-brand-yellow rounded-full opacity-20 blur-3xl z-0"></div>
-        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-brand-fuchsia rounded-full opacity-10 blur-3xl z-0"></div>
-        
+        <div
+            class="absolute top-0 right-0 -mr-20 -mt-20 w-[30rem] h-[30rem] bg-brand-yellow rounded-full opacity-20 blur-3xl z-0">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-brand-fuchsia rounded-full opacity-10 blur-3xl z-0">
+        </div>
+
         <div class="absolute inset-0 bg-pattern z-0 opacity-10"></div> <!-- Patrón -->
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <!-- Badge modificado a Amarillo -->
-            <span class="inline-block py-1.5 px-4 rounded-full bg-yellow-50 border border-brand-yellow text-brand-dark font-bold text-sm mb-6 tracking-wide uppercase shadow-sm">
+            <span
+                class="inline-block py-1.5 px-4 rounded-full bg-yellow-50 border border-brand-yellow text-brand-dark font-bold text-sm mb-6 tracking-wide uppercase shadow-sm">
                 <i class="fa-solid fa-location-dot mr-1 text-brand-yellow"></i> Mendoza, Argentina
             </span>
-            
+
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-heading font-black text-brand-dark leading-tight mb-6">
                 Construyendo infancias<br>
                 <!-- Texto cambiado a Amarillo -->
                 <span class="text-brand-yellow" style="text-shadow: 1px 1px 0 rgba(0,0,0,0.05);">más felices</span>
             </h1>
-            
-            <p class="mt-4 max-w-2xl mx-auto text-xl text-brand-gray mb-10 leading-relaxed font-medium bg-white/30 backdrop-blur-sm rounded-xl p-2 inline-block">
-                Somos jóvenes comprometidos en transmitir valores y brindar contención a niños y niñas en situación de vulnerabilidad.
+
+            <p
+                class="mt-4 max-w-2xl mx-auto text-xl text-brand-gray mb-10 leading-relaxed font-medium bg-white/30 backdrop-blur-sm rounded-xl p-2 inline-block">
+                Somos jóvenes comprometidos en transmitir valores y brindar contención a niños y niñas en situación de
+                vulnerabilidad.
             </p>
-            
+
             <div class="flex flex-col sm:flex-row justify-center gap-4 mt-4">
                 <!-- Botón Primario: Fucsia Solido (Mantenido) -->
-                <a href="#sumate" class="px-8 py-4 bg-brand-fuchsia text-white font-bold rounded-full text-lg hover:bg-pink-700 transition btn-flat flex items-center justify-center gap-2 shadow-sm">
+                <a href="#sumate"
+                    class="px-8 py-4 bg-brand-fuchsia text-white font-bold rounded-full text-lg hover:bg-pink-700 transition btn-flat flex items-center justify-center gap-2 shadow-sm">
                     Quiero ser Voluntario <i class="fa-solid fa-arrow-right"></i>
                 </a>
                 <!-- Botón Secundario: Cambiado a Amarillo para balancear -->
-                <a href="#conocer-mas" class="px-8 py-4 bg-white text-brand-dark font-bold rounded-full text-lg border-2 border-brand-yellow hover:bg-brand-yellow hover:text-brand-dark transition btn-flat flex items-center justify-center shadow-sm">
+                <a href="#conocer-mas"
+                    class="px-8 py-4 bg-white text-brand-dark font-bold rounded-full text-lg border-2 border-brand-yellow hover:bg-brand-yellow hover:text-brand-dark transition btn-flat flex items-center justify-center shadow-sm">
                     Conocer más
                 </a>
             </div>
 
             <!-- Stats (Bloques Sólidos) -->
             <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto pt-10 border-t border-gray-200">
-                <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-brand-fuchsia transition duration-300">
+                <div
+                    class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-brand-fuchsia transition duration-300">
                     <div class="text-4xl font-black text-brand-fuchsia mb-1">+15</div>
                     <div class="text-xs font-bold text-gray-500 uppercase tracking-wider">Años de Historia</div>
                 </div>
-                <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-brand-yellow transition duration-300">
+                <div
+                    class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-brand-yellow transition duration-300">
                     <div class="text-4xl font-black text-brand-yellow mb-1">+70</div>
                     <div class="text-xs font-bold text-gray-500 uppercase tracking-wider">Voluntarios</div>
                 </div>
-                <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-brand-fuchsia transition duration-300">
+                <div
+                    class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-brand-fuchsia transition duration-300">
                     <div class="text-4xl font-black text-brand-fuchsia mb-1">+5</div>
                     <div class="text-xs font-bold text-gray-500 uppercase tracking-wider">Centros</div>
                 </div>
-                <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-brand-yellow transition duration-300">
+                <div
+                    class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 hover:border-brand-yellow transition duration-300">
                     <div class="text-4xl font-black text-brand-yellow mb-1">∞</div>
                     <div class="text-xs font-bold text-gray-500 uppercase tracking-wider">Sonrisas</div>
                 </div>
@@ -175,19 +202,26 @@
                 <!-- Imagen con marco sólido -->
                 <div class="relative mb-12 lg:mb-0 order-2 lg:order-1">
                     <div class="absolute top-4 left-4 w-full h-full bg-brand-yellow rounded-3xl -z-10"></div>
-                    <img src="Recuadro.png" alt="Voluntarios jugando" class="w-full h-[500px] object-cover rounded-3xl border-4 border-white shadow-sm">
+                    <img src="Recuadro.png" alt="Voluntarios jugando"
+                        class="w-full h-[500px] object-cover rounded-3xl border-4 border-white shadow-sm">
                 </div>
-                
+
                 <div class="order-1 lg:order-2">
-                    <span class="inline-block px-3 py-1 bg-brand-fuchsia/10 text-brand-fuchsia font-bold tracking-widest text-xs uppercase mb-4 rounded-md">Sobre Nosotros</span>
-                    <h2 class="text-3xl md:text-5xl font-heading font-black text-brand-dark mb-6">Más que un juego,<br> un vínculo real.</h2>
+                    <span
+                        class="inline-block px-3 py-1 bg-brand-fuchsia/10 text-brand-fuchsia font-bold tracking-widest text-xs uppercase mb-4 rounded-md">Sobre
+                        Nosotros</span>
+                    <h2 class="text-3xl md:text-5xl font-heading font-black text-brand-dark mb-6">Más que un juego,<br>
+                        un vínculo real.</h2>
                     <p class="text-lg text-brand-gray mb-6 leading-relaxed">
-                        Desde 2008, <strong>Crecer Felices</strong> trabaja en Mendoza con un objetivo claro: acompañar. No somos solo un grupo que va a jugar; somos una red de contención para niños y niñas de 5 a 13 años.
+                        Desde 2008, <strong>Crecer Felices</strong> trabaja en Mendoza con un objetivo claro: acompañar.
+                        No somos solo un grupo que va a jugar; somos una red de contención para niños y niñas de 5 a 13
+                        años.
                     </p>
                     <p class="text-lg text-brand-gray mb-8 leading-relaxed">
-                        Buscamos suplir carencias afectivas y materiales mediante la transmisión de valores universales. Creemos que un niño escuchado es un niño que puede soñar un futuro diferente.
+                        Buscamos suplir carencias afectivas y materiales mediante la transmisión de valores universales.
+                        Creemos que un niño escuchado es un niño que puede soñar un futuro diferente.
                     </p>
-                    
+
                     <div class="space-y-4">
                         <div class="flex items-center">
                             <i class="fa-solid fa-circle-check text-brand-fuchsia text-xl mr-3"></i>
@@ -211,36 +245,46 @@
     <section id="actividades" class="py-24 bg-brand-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-brand-fuchsia font-bold tracking-widest text-sm uppercase mb-2 block">Nuestras Actividades</span>
+                <span class="text-brand-fuchsia font-bold tracking-widest text-sm uppercase mb-2 block">Nuestras
+                    Actividades</span>
                 <h2 class="text-3xl md:text-4xl font-heading font-black text-brand-dark">Lo que hacemos</h2>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Card 1 (Fucsia Accent) -->
-                <div class="bg-white rounded-2xl p-8 border-b-8 border-brand-fuchsia shadow-sm hover:-translate-y-2 transition duration-300">
-                    <div class="w-14 h-14 bg-brand-fuchsia text-white rounded-xl flex items-center justify-center text-2xl mb-6">
+                <div
+                    class="bg-white rounded-2xl p-8 border-b-8 border-brand-fuchsia shadow-sm hover:-translate-y-2 transition duration-300">
+                    <div
+                        class="w-14 h-14 bg-brand-fuchsia text-white rounded-xl flex items-center justify-center text-2xl mb-6">
                         <i class="fa-solid fa-puzzle-piece"></i>
                     </div>
                     <h3 class="text-xl font-bold text-brand-dark mb-3">Talleres Semanales</h3>
-                    <p class="text-brand-gray">Visitamos los centros una vez por semana durante 2 horas. Trabajamos valores a través de temáticas como arte, ecología y deporte.</p>
+                    <p class="text-brand-gray">Visitamos los centros una vez por semana durante 2 horas. Trabajamos
+                        valores a través de temáticas como arte, ecología y deporte.</p>
                 </div>
 
                 <!-- Card 2 (Yellow Accent) -->
-                <div class="bg-white rounded-2xl p-8 border-b-8 border-brand-yellow shadow-sm hover:-translate-y-2 transition duration-300">
-                    <div class="w-14 h-14 bg-brand-yellow text-brand-dark rounded-xl flex items-center justify-center text-2xl mb-6">
+                <div
+                    class="bg-white rounded-2xl p-8 border-b-8 border-brand-yellow shadow-sm hover:-translate-y-2 transition duration-300">
+                    <div
+                        class="w-14 h-14 bg-brand-yellow text-brand-dark rounded-xl flex items-center justify-center text-2xl mb-6">
                         <i class="fa-solid fa-cake-candles"></i>
                     </div>
                     <h3 class="text-xl font-bold text-brand-dark mb-3">Día del Niño</h3>
-                    <p class="text-brand-gray">Una vez al año organizamos un evento masivo para más de 300 niños. Magia, juegos, comida rica y sorpresas inolvidables.</p>
+                    <p class="text-brand-gray">Una vez al año organizamos un evento masivo para más de 300 niños. Magia,
+                        juegos, comida rica y sorpresas inolvidables.</p>
                 </div>
 
                 <!-- Card 3 (Fucsia Accent) -->
-                <div class="bg-white rounded-2xl p-8 border-b-8 border-brand-fuchsia shadow-sm hover:-translate-y-2 transition duration-300">
-                    <div class="w-14 h-14 bg-brand-fuchsia text-white rounded-xl flex items-center justify-center text-2xl mb-6">
+                <div
+                    class="bg-white rounded-2xl p-8 border-b-8 border-brand-fuchsia shadow-sm hover:-translate-y-2 transition duration-300">
+                    <div
+                        class="w-14 h-14 bg-brand-fuchsia text-white rounded-xl flex items-center justify-center text-2xl mb-6">
                         <i class="fa-solid fa-hands-holding-circle"></i>
                     </div>
                     <h3 class="text-xl font-bold text-brand-dark mb-3">Eventos Solidarios</h3>
-                    <p class="text-brand-gray">Colectas, salidas especiales y actividades puntuales para cubrir necesidades específicas y apoyar a otras instituciones.</p>
+                    <p class="text-brand-gray">Colectas, salidas especiales y actividades puntuales para cubrir
+                        necesidades específicas y apoyar a otras instituciones.</p>
                 </div>
             </div>
         </div>
@@ -251,9 +295,11 @@
         <div class="max-w-4xl mx-auto px-4 text-center">
             <i class="fa-solid fa-quote-left text-5xl text-brand-dark opacity-20 mb-6"></i>
             <p class="text-2xl md:text-3xl font-heading font-bold mb-8 italic leading-snug text-brand-dark">
-                "El trabajo más importante del voluntario es darle su tiempo a los chicos. Es el momento en que son escuchados, mirados a los ojos y valorados."
+                "El trabajo más importante del voluntario es darle su tiempo a los chicos. Es el momento en que son
+                escuchados, mirados a los ojos y valorados."
             </p>
-            <div class="inline-block px-4 py-1 bg-brand-dark text-white rounded font-bold text-sm uppercase tracking-wider">
+            <div
+                class="inline-block px-4 py-1 bg-brand-dark text-white rounded font-bold text-sm uppercase tracking-wider">
                 Coordinación de Voluntarios
             </div>
         </div>
@@ -265,14 +311,17 @@
             <div class="bg-brand-dark rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-lg">
                 <!-- Parte Izquierda (Oscura) -->
                 <div class="md:w-1/2 p-12 md:p-16">
-                    <span class="text-brand-yellow font-bold tracking-widest text-xs uppercase mb-4 block">Voluntariado</span>
+                    <span
+                        class="text-brand-yellow font-bold tracking-widest text-xs uppercase mb-4 block">Voluntariado</span>
                     <h2 class="text-4xl font-heading font-black text-white mb-6">¡Sumate al equipo!</h2>
                     <p class="text-gray-300 mb-8 text-lg leading-relaxed">
-                        No necesitas ser experto, solo tener ganas de compartir y comprometerte. Buscamos personas que quieran regalar dos horas de su semana.
+                        No necesitas ser experto, solo tener ganas de compartir y comprometerte. Buscamos personas que
+                        quieran regalar dos horas de su semana.
                     </p>
                     <ul class="space-y-4">
                         <li class="flex items-center text-white font-bold">
-                            <i class="fa-regular fa-calendar-check text-brand-fuchsia mr-4 text-xl"></i> Compromiso semanal
+                            <i class="fa-regular fa-calendar-check text-brand-fuchsia mr-4 text-xl"></i> Compromiso
+                            semanal
                         </li>
                         <li class="flex items-center text-white font-bold">
                             <i class="fa-solid fa-location-dot text-brand-yellow mr-4 text-xl"></i> Gran Mendoza
@@ -285,15 +334,15 @@
 
                 <!-- Parte Derecha (Acción) -->
                 <div class="md:w-1/2 bg-gray-100 p-12 md:p-16 flex flex-col justify-center items-center text-center">
-                    <h3 class="text-2xl font-bold text-brand-dark mb-4">¿Estás listo?</h3>
-                    <p class="text-brand-gray mb-8">Escribinos para asistir a la próxima charla informativa.</p>
-                    
-                    <!-- Botón Plano Fucsia -->
-                    <a href="https://www.instagram.com/proyectocrecerfelices" target="_blank" class="w-full bg-brand-fuchsia text-white font-bold py-4 rounded-xl hover:bg-pink-700 transition btn-flat mb-4 flex items-center justify-center gap-3">
-                        <i class="fa-brands fa-instagram text-2xl"></i> Mensaje por Instagram
+                    <h3 class="text-2xl font-bold text-brand-dark mb-4">¿Querés sumarte?</h3>
+                    <p class="text-brand-gray mb-8">Completá el formulario de inscripción para que podamos contactarte
+                        para la próxima charla.</p>
+
+                    <a href="https://forms.gle/9yaaDoD2MdB962qC8" target="_blank"
+                        class="w-full bg-brand-fuchsia text-white font-bold py-4 rounded-xl hover:bg-pink-700 transition btn-flat mb-4 flex items-center justify-center gap-3 shadow-lg">
+                        <i class="fa-solid fa-file-signature text-2xl"></i> Llenar Formulario de Inscripción
                     </a>
-                    
-                    <p class="text-xs text-brand-gray mt-4">Te responderemos lo antes posible.</p>
+                    <p class="text-xs text-brand-gray mt-4 italic">Es rápido y nos ayuda mucho a organizarnos.</p>
                 </div>
             </div>
         </div>
@@ -302,25 +351,32 @@
     <!-- Donate Section -->
     <section id="donar" class="py-24 bg-brand-light border-t border-gray-200">
         <div class="max-w-3xl mx-auto px-4 text-center">
-            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-yellow text-brand-dark mb-6 text-2xl">
+            <div
+                class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-yellow text-brand-dark mb-6 text-2xl">
                 <i class="fa-solid fa-hand-holding-dollar"></i>
             </div>
-            <h2 class="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">Ayudanos a seguir creciendo</h2>
+            <h2 class="text-3xl md:text-4xl font-heading font-black text-brand-dark mb-6">Ayudanos a seguir creciendo
+            </h2>
             <p class="text-lg text-brand-gray mb-10">
-                Tu aporte nos ayuda a comprar materiales para los talleres, organizar el Día del Niño y garantizar la merienda.
+                Tu aporte nos ayuda a comprar materiales para los talleres, organizar el Día del Niño y garantizar la
+                merienda.
             </p>
-            
+
             <div class="bg-white rounded-xl p-8 border-2 border-brand-fuchsia border-dashed relative">
-                <p class="text-xs font-bold text-brand-fuchsia uppercase tracking-widest mb-4">Alias Mercado Pago / Banco</p>
-                
-                <div class="flex items-center justify-center gap-4 bg-brand-light p-4 rounded-lg cursor-pointer hover:bg-gray-100 transition" onclick="copyAlias()">
-                    <span id="alias-text" class="text-2xl md:text-3xl font-black text-brand-dark font-mono tracking-tight">proyectocrecerf</span>
+                <p class="text-xs font-bold text-brand-fuchsia uppercase tracking-widest mb-4">Alias Mercado Pago /
+                    Banco</p>
+
+                <div class="flex items-center justify-center gap-4 bg-brand-light p-4 rounded-lg cursor-pointer hover:bg-gray-100 transition"
+                    onclick="copyAlias()">
+                    <span id="alias-text"
+                        class="text-2xl md:text-3xl font-black text-brand-dark font-mono tracking-tight">proyectocrecerf</span>
                     <button class="text-gray-400 hover:text-brand-fuchsia transition text-xl" title="Copiar Alias">
                         <i class="fa-regular fa-copy"></i>
                     </button>
                 </div>
-                
-                <div id="copy-feedback" class="h-6 mt-3 text-sm text-brand-fuchsia font-bold opacity-0 transition-opacity">
+
+                <div id="copy-feedback"
+                    class="h-6 mt-3 text-sm text-brand-fuchsia font-bold opacity-0 transition-opacity">
                     ¡Copiado!
                 </div>
                 <p class="text-gray-400 mt-2 text-sm">Titular: Asociación Civil Crecer Felices</p>
@@ -333,25 +389,30 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-brand-fuchsia flex items-center justify-center text-white font-bold">
+                    <div
+                        class="w-10 h-10 rounded-full bg-brand-fuchsia flex items-center justify-center text-white font-bold">
                         <i class="fa-solid fa-child"></i>
                     </div>
                     <div class="flex flex-col leading-none">
-                        <span class="font-heading font-bold text-xs tracking-widest text-gray-400 uppercase">Proyecto</span>
-                        <span class="font-heading font-bold text-xl text-white">Crecer <span class="text-brand-yellow">Felices</span></span>
+                        <span
+                            class="font-heading font-bold text-xs tracking-widest text-gray-400 uppercase">Proyecto</span>
+                        <span class="font-heading font-bold text-xl text-white">Crecer <span
+                                class="text-brand-yellow">Felices</span></span>
                     </div>
                 </div>
-                
+
                 <div class="flex space-x-6">
-                    <a href="https://www.instagram.com/proyectocrecerfelices" target="_blank" class="text-gray-400 hover:text-brand-fuchsia transition text-2xl">
+                    <a href="https://www.instagram.com/proyectocrecerfelices" target="_blank"
+                        class="text-gray-400 hover:text-brand-fuchsia transition text-2xl">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="mailto:proyectocrecerfelices@gmail.com" class="text-gray-400 hover:text-brand-yellow transition text-2xl">
+                    <a href="mailto:proyectocrecerfelices@gmail.com"
+                        class="text-gray-400 hover:text-brand-yellow transition text-2xl">
                         <i class="fa-solid fa-envelope"></i>
                     </a>
                 </div>
             </div>
-            
+
             <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
                 <p>&copy; 2024 Proyecto Crecer Felices. Mendoza, Argentina.</p>
             </div>
@@ -376,7 +437,7 @@
         // Función Copiar Alias
         function copyAlias() {
             const alias = document.getElementById('alias-text').innerText;
-            
+
             if (navigator.clipboard && window.isSecureContext) {
                 navigator.clipboard.writeText(alias);
             } else {
@@ -403,4 +464,5 @@
         }
     </script>
 </body>
+
 </html>
