@@ -456,7 +456,66 @@
                 feedback.style.opacity = '0';
             }, 2000);
         }
+        // Función para mostrar el modal apenas carga la página
+        window.onload = function () {
+            // Esperamos 1.5 segundos para no asustar al usuario de entrada
+            setTimeout(() => {
+                const modal = document.getElementById('modal-inscripcion');
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }, 1500);
+        };
+
+        // Función para cerrar el modal
+        function cerrarModal() {
+            const modal = document.getElementById('modal-inscripcion');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
     </script>
+    <div id="modal-inscripcion" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+        <div class="absolute inset-0 bg-brand-dark/80 backdrop-blur-sm" onclick="cerrarModal()"></div>
+
+        <div
+            class="relative bg-white w-full max-w-lg rounded-3xl overflow-hidden shadow-2xl transform transition-all scale-100 border-4 border-brand-yellow">
+            <button onclick="cerrarModal()"
+                class="absolute top-4 right-4 text-brand-dark hover:text-brand-fuchsia transition z-10">
+                <i class="fa-solid fa-circle-xmark text-3xl"></i>
+            </button>
+
+            <div class="bg-brand-yellow h-32 flex items-center justify-center relative overflow-hidden">
+                <i class="fa-solid fa-star text-white/40 text-8xl absolute -left-5 -top-5 rotate-12"></i>
+                <i class="fa-solid fa-heart text-white/40 text-8xl absolute -right-5 -bottom-5 -rotate-12"></i>
+                <div class="text-center">
+                    <h3 class="font-heading font-black text-brand-dark text-3xl uppercase tracking-tighter">
+                        ¡Inscripciones 2026!</h3>
+                </div>
+            </div>
+
+            <div class="p-8 text-center">
+                <div
+                    class="w-20 h-20 bg-brand-fuchsia text-white rounded-full flex items-center justify-center text-3xl mx-auto -mt-16 mb-6 border-4 border-white shadow-lg relative z-20">
+                    <i class="fa-solid fa-child-reaching"></i>
+                </div>
+
+                <h4 class="text-2xl font-bold text-brand-dark mb-4 leading-tight">Buscamos nuevos voluntarios en Mendoza
+                </h4>
+                <p class="text-brand-gray mb-8">
+                    Sumate a <strong>Crecer Felices</strong> y regalá 2 horas de tu semana para transformar la infancia
+                    de muchos niños y niñas. ¡Te esperamos en la charla informativa!
+                </p>
+
+                <a href="TU_LINK_DE_GOOGLE_FORMS_AQUI" target="_blank"
+                    class="block w-full bg-brand-fuchsia text-white font-bold py-4 rounded-xl hover:bg-pink-700 transition btn-flat text-lg shadow-md mb-3">
+                    ¡Quiero Inscribirme Ahora!
+                </a>
+
+                <button onclick="cerrarModal()" class="text-brand-gray text-sm font-bold hover:underline">
+                    Quizás más tarde
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
